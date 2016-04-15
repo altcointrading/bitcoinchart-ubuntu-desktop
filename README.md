@@ -1,4 +1,4 @@
-# bitcoinchart-ubuntu-desktop
+# Bitcoin Trading Chart - Ubuntu Desktop Widget
 Ubuntu desktop widget pulling bitcoin TA trading chart and altcoin tickers
 
 1. Download this repo
