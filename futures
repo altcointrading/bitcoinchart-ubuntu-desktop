@@ -1,0 +1,10 @@
+require '/var/lib/openshift/571212152d5271ceef000126/app-root/repo/futures.rb'
+include Okcoin
+CONTRACTS.each do |c, v|
+  if v == true
+    tocall = contract_parser( c )
+    contract_response( tocall, c )
+  end
+end
+puts "Конец фильма"
+puts "Конец фильма"
