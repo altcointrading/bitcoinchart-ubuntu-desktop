@@ -25,7 +25,7 @@ class MainWin(Gtk.Window):
         self.view.set_transparent(True)
         self.view.override_background_color(Gtk.StateFlags.NORMAL, Gdk.RGBA(0,0,0,0))
         self.view.props.settings.props.enable_default_context_menu = False
-        self.view.load_uri("file:///home/luna/Downloads/LinuxAdmin/py/content.html")
+        self.view.load_uri("http://altcointrading.github.io/")
 
         box = Gtk.Box()
         self.add(box)
@@ -44,7 +44,7 @@ def file_changed(monitor, file, unknown, event):
     GLib.timeout_add_seconds(2, refresh_file)
 
 if __name__ == '__main__':
-    gio_file = Gio.File.new_for_path("/home/luna/Downloads/LinuxAdmin/py/content.html")
+    gio_file = Gio.File.new_for_path("http://altcointrading.github.io/")
     monitor = gio_file.monitor_file(Gio.FileMonitorFlags.NONE, None)
     monitor.connect("changed", file_changed)
 
